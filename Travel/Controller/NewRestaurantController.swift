@@ -28,10 +28,10 @@ class NewSpotController: UITableViewController, UITextFieldDelegate, UIImagePick
         }
     }
     
-    @IBOutlet var typeTextField: RoundedTextField! {
+    @IBOutlet var phoneTextField: RoundedTextField! {
         didSet {
-            typeTextField.tag = 2
-            typeTextField.delegate = self
+            phoneTextField.tag = 2
+            phoneTextField.delegate = self
         }
     }
     
@@ -152,7 +152,7 @@ class NewSpotController: UITableViewController, UITextFieldDelegate, UIImagePick
     
     @IBAction func saveButtonTapped(sender: AnyObject) {
         
-        if nameTextField.text == "" || typeTextField.text == "" || addressTextField.text == "" || descriptionTextView.text == "" {
+        if nameTextField.text == "" || phoneTextField.text == "" || addressTextField.text == "" || descriptionTextView.text == "" {
             let alertController = UIAlertController(title: "Oops", message: "We can't proceed because one of the fields is blank. Please note that all fields are required.", preferredStyle: .alert)
             let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
             alertController.addAction(alertAction)
@@ -161,7 +161,7 @@ class NewSpotController: UITableViewController, UITextFieldDelegate, UIImagePick
             return
         }
         
-        let newValue = Spot(name: nameTextField.text!, type: typeTextField.text!, location: addressTextField.text!, summary: descriptionTextView.text!, image: selectedImageName, isVisited: false)
+        let newValue = Spot(name: nameTextField.text!, location: addressTextField.text!, phone: phoneTextField.text!, summary: descriptionTextView.text!, image: selectedImageName, isVisited: false)
         
         addDelegate?.addSpot(item: newValue)
         

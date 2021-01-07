@@ -21,13 +21,19 @@ class SpotDetailViewController: UIViewController, UITableViewDataSource, UITable
         1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        4
+        5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
-                    
         case 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SpotDetailIconTextCell.self), for: indexPath) as! SpotDetailIconTextCell
+            //        cell.iconImageView.image = UIImage(systemName: "map")?.withTintColor(.black, renderingMode: .alwaysOriginal)
+            cell.iconImageView.image = UIImage(named: "phone")
+            cell.shortTextLabel.text = spot.phone
+            cell.selectionStyle = .none
+        return cell
+        case 1:
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SpotDetailIconTextCell.self), for: indexPath) as! SpotDetailIconTextCell
 //        cell.iconImageView.image = UIImage(systemName: "map")?.withTintColor(.black, renderingMode: .alwaysOriginal)
         cell.iconImageView.image = UIImage(named: "map")
@@ -35,21 +41,21 @@ class SpotDetailViewController: UIViewController, UITableViewDataSource, UITable
         cell.selectionStyle = .none
                     
         return cell
-        case 1:
+        case 2:
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SpotDetailTextCell.self), for: indexPath) as! SpotDetailTextCell
         cell.descriptionLabel.text = spot.summary
         cell.selectionStyle = .none
         
         return cell
          
-        case 2:
+        case 3:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SpotDetailSeparatorCell.self), for: indexPath) as! SpotDetailSeparatorCell
             cell.titleLabel.text = "HOW TO GET HERE"
             cell.selectionStyle = .none
             
             return cell
             
-        case 3:
+        case 4:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SpotDetailMapCell.self), for: indexPath) as! SpotDetailMapCell
             cell.selectionStyle = .none
             cell.configure(location: spot.location)
@@ -70,7 +76,7 @@ class SpotDetailViewController: UIViewController, UITableViewDataSource, UITable
         
         // Configure header view
         headerView.nameLabel.text = spot.name
-        headerView.typeLabel.text = spot.type
+        // headerView.phoneLabel.text = spot.phone
         headerView.headerImageView.image = UIImage(named: spot.image)
         headerView.heartImageView.isHidden = (spot.isVisited) ? false : true
         if !spot.rating.isEmpty {

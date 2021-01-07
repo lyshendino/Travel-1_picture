@@ -56,8 +56,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
                 // Add annotation
                 let annotation = MKPointAnnotation()
                 annotation.title = self.spot.name
-                annotation.subtitle = self.spot.type
-                
+                annotation.subtitle = self.spot.phone
                 if let location = placemark.location {
                     annotation.coordinate = location.coordinate
                     

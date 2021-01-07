@@ -68,7 +68,7 @@ class SpotTableViewController: UITableViewController, UISearchResultsUpdating {
         
         cell.nameLabel.text = spot.name //optioinal chaining
         cell.locationLabel.text = spot.location
-        cell.typeLabel.text = spot.type
+        cell.phoneLabel.text = spot.phone
         cell.thumbnailImageView.image = UIImage(named: spot.image)
         
         if spot.isVisited {
