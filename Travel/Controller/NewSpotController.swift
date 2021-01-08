@@ -161,7 +161,7 @@ class NewSpotController: UITableViewController, UITextFieldDelegate, UIImagePick
             return
         }
         
-        let newValue = Spot(name: nameTextField.text!, location: addressTextField.text!, phone: phoneTextField.text!, summary: descriptionTextView.text!, image: selectedImageName, isVisited: false)
+        let newValue = Spot(name: nameTextField.text!, location: addressTextField.text!, phone: phoneTextField.text!, summary: descriptionTextView.text!, image: selectedImageName, isVisited: false, photoCount: String , photoName: [String])
         
         addDelegate?.addSpot(item: newValue)
         

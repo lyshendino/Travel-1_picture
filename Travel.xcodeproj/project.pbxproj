@@ -30,7 +30,7 @@
 		4E6C84F6257878D900896E88 /* SpotDetailMapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6C84F5257878D900896E88 /* SpotDetailMapCell.swift */; };
 		4E6C84F8257882E600896E88 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6C84F7257882E600896E88 /* MapViewController.swift */; };
 		4E85D7E1258AEFEE00B4DDA8 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E85D7E0258AEFEE00B4DDA8 /* RoundedTextField.swift */; };
-		4E85D7E3258AF12700B4DDA8 /* NewRestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E85D7E2258AF12700B4DDA8 /* NewRestaurantController.swift */; };
+		4E85D7E3258AF12700B4DDA8 /* NewSpotController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E85D7E2258AF12700B4DDA8 /* NewSpotController.swift */; };
 		4E986C6825A6AF0D00B5F2B6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E986C6725A6AF0D00B5F2B6 /* Default-568h@2x.png */; };
 		4EE817632541277C008B828E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE817622541277C008B828E /* AppDelegate.swift */; };
 		4EE817652541277C008B828E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE817642541277C008B828E /* SceneDelegate.swift */; };
@@ -39,6 +39,8 @@
 		4EE8176F2541277C008B828E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EE8176D2541277C008B828E /* LaunchScreen.storyboard */; };
 		4EE817772541293D008B828E /* SpotTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE817762541293D008B828E /* SpotTableViewController.swift */; };
 		4EE8177925413599008B828E /* SpotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE8177825413599008B828E /* SpotTableViewCell.swift */; };
+		4EE8A44C25A822E700CDFBE1 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE8A44B25A822E700CDFBE1 /* PageViewController.swift */; };
+		4EE8A44E25A8234A00CDFBE1 /* ImageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE8A44D25A8234A00CDFBE1 /* ImageContentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,7 +67,7 @@
 		4E6C84F5257878D900896E88 /* SpotDetailMapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetailMapCell.swift; sourceTree = "<group>"; };
 		4E6C84F7257882E600896E88 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		4E85D7E0258AEFEE00B4DDA8 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
-		4E85D7E2258AF12700B4DDA8 /* NewRestaurantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRestaurantController.swift; sourceTree = "<group>"; };
+		4E85D7E2258AF12700B4DDA8 /* NewSpotController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSpotController.swift; sourceTree = "<group>"; };
 		4E986C6725A6AF0D00B5F2B6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4EE8175F2541277C008B828E /* Travel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EE817622541277C008B828E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,8 @@
 		4EE817702541277C008B828E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EE817762541293D008B828E /* SpotTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotTableViewController.swift; sourceTree = "<group>"; };
 		4EE8177825413599008B828E /* SpotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotTableViewCell.swift; sourceTree = "<group>"; };
+		4EE8A44B25A822E700CDFBE1 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		4EE8A44D25A8234A00CDFBE1 /* ImageContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,8 @@
 				EAB961AA256634790096B862 /* Controller */,
 				4EE817622541277C008B828E /* AppDelegate.swift */,
 				4EE817642541277C008B828E /* SceneDelegate.swift */,
+				4EE8A44B25A822E700CDFBE1 /* PageViewController.swift */,
+				4EE8A44D25A8234A00CDFBE1 /* ImageContentViewController.swift */,
 				4EE817682541277C008B828E /* Main.storyboard */,
 				4EE8176B2541277C008B828E /* Assets.xcassets */,
 				4EE8176D2541277C008B828E /* LaunchScreen.storyboard */,
@@ -166,7 +172,7 @@
 				4E3CBDFF25539CB1002913BA /* SpotDetailViewController.swift */,
 				4E6C84F7257882E600896E88 /* MapViewController.swift */,
 				4E2BA74D2581C29F0025546B /* ReviewViewController.swift */,
-				4E85D7E2258AF12700B4DDA8 /* NewRestaurantController.swift */,
+				4E85D7E2258AF12700B4DDA8 /* NewSpotController.swift */,
 				4E2189CB259440E100102351 /* AboutMeController.swift */,
 			);
 			path = Controller;
@@ -285,10 +291,12 @@
 				4EE817632541277C008B828E /* AppDelegate.swift in Sources */,
 				4E5419B42566047000AE2EB4 /* Spot.swift in Sources */,
 				4E0D3E06256F518100E04A0E /* SpotDetailIconTextCell.swift in Sources */,
+				4EE8A44C25A822E700CDFBE1 /* PageViewController.swift in Sources */,
 				4E0D3E04256F441700E04A0E /* SpotDetailHeaderView.swift in Sources */,
 				4E6C84F8257882E600896E88 /* MapViewController.swift in Sources */,
 				4E3CBE0025539CB1002913BA /* SpotDetailViewController.swift in Sources */,
-				4E85D7E3258AF12700B4DDA8 /* NewRestaurantController.swift in Sources */,
+				4EE8A44E25A8234A00CDFBE1 /* ImageContentViewController.swift in Sources */,
+				4E85D7E3258AF12700B4DDA8 /* NewSpotController.swift in Sources */,
 				4EE817652541277C008B828E /* SceneDelegate.swift in Sources */,
 				4E85D7E1258AEFEE00B4DDA8 /* RoundedTextField.swift in Sources */,
 				4EE817772541293D008B828E /* SpotTableViewController.swift in Sources */,

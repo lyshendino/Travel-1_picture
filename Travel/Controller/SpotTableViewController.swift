@@ -10,7 +10,7 @@ import UIKit
 
 class SpotTableViewController: UITableViewController, UISearchResultsUpdating {
 
-    var spots: [Spot] = []
+var spots: [Spot] = []
     
     var searchController: UISearchController!
     
